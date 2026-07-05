@@ -10,7 +10,7 @@
       "signals": [
         {
           "asset_id": "FUT_PTA",
-          "asset_name": "PTA",
+          "asset_name": "精对苯二甲酸期货",
           "action": "建底仓",
           "position_side": "做多",
           "suggested_weight": "5.0%",
@@ -19,7 +19,7 @@
         },
         {
           "asset_id": "512800",
-          "asset_name": "银行ETF华宝",
+          "asset_name": "银行指数基金华宝",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -28,7 +28,7 @@
         },
         {
           "asset_id": "515220",
-          "asset_name": "煤炭ETF国泰",
+          "asset_name": "煤炭指数基金国泰",
           "action": "建底仓",
           "position_side": "做多",
           "suggested_weight": "10.0%",
@@ -37,7 +37,7 @@
         },
         {
           "asset_id": "159865",
-          "asset_name": "养殖ETF国泰",
+          "asset_name": "养殖指数基金国泰",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -46,7 +46,7 @@
         },
         {
           "asset_id": "159825",
-          "asset_name": "农业ETF富国",
+          "asset_name": "农业指数基金富国",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -55,7 +55,7 @@
         },
         {
           "asset_id": "560080",
-          "asset_name": "中药ETF汇添富",
+          "asset_name": "中药指数基金汇添富",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -64,7 +64,7 @@
         },
         {
           "asset_id": "159766",
-          "asset_name": "旅游ETF富国",
+          "asset_name": "旅游指数基金富国",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -73,7 +73,7 @@
         },
         {
           "asset_id": "515650",
-          "asset_name": "消费50ETF富国",
+          "asset_name": "消费50指数基金富国",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -82,7 +82,7 @@
         },
         {
           "asset_id": "515170",
-          "asset_name": "食品饮料ETF华夏",
+          "asset_name": "食品饮料指数基金华夏",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -91,7 +91,7 @@
         },
         {
           "asset_id": "159852",
-          "asset_name": "软件ETF嘉实",
+          "asset_name": "软件指数基金嘉实",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -100,7 +100,7 @@
         },
         {
           "asset_id": "159636",
-          "asset_name": "港股通科技30ETF工银",
+          "asset_name": "港股通科技30指数基金工银",
           "action": "等待",
           "position_side": "做多",
           "suggested_weight": "0.0%",
@@ -112,7 +112,7 @@
       "open_episodes": [
         {
           "asset_id": "FUT_PTA",
-          "asset_name": "PTA",
+          "asset_name": "精对苯二甲酸期货",
           "position_side": "做多",
           "opened_at": "2026-07-04",
           "latest_action": "建底仓",
@@ -121,7 +121,7 @@
         },
         {
           "asset_id": "515220",
-          "asset_name": "煤炭ETF国泰",
+          "asset_name": "煤炭指数基金国泰",
           "position_side": "做多",
           "opened_at": "2026-07-04",
           "latest_action": "建底仓",
