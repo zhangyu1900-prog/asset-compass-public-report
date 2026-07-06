@@ -1,11 +1,11 @@
 {
-  "latest_report": "2026-07-04",
+  "latest_report": "2026-07-06",
   "reports": [
     {
-      "date": "2026-07-04",
+      "date": "2026-07-06",
       "action_counts": {
-        "建底仓": 2,
-        "等待": 9
+        "建底仓": 1,
+        "等待": 10
       },
       "signals": [
         {
@@ -29,11 +29,11 @@
         {
           "asset_id": "515220",
           "asset_name": "煤炭指数基金国泰",
-          "action": "建底仓",
+          "action": "等待",
           "position_side": "做多",
-          "suggested_weight": "10.0%",
-          "weekly_execution_weight": "10.0%",
-          "summary": "公开摘要：本期出现建底仓信号，按模型仓位跟踪后续表现。"
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
         },
         {
           "asset_id": "159865",
@@ -108,7 +108,34 @@
           "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
         }
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "asset_id": "FUT_PTA",
+          "asset_name": "精对苯二甲酸期货",
+          "prior_action": "建底仓",
+          "latest_action": "建底仓",
+          "position_side": "做多",
+          "one_week_return": "0.0%",
+          "model_contribution": "0.0%",
+          "max_adverse_return": "0.0%",
+          "max_favorable_return": "0.0%",
+          "review_status": "继续有效",
+          "review_summary": "继续有效，本周期方向收益 0.0%"
+        },
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "prior_action": "建底仓",
+          "latest_action": "等待",
+          "position_side": "做多",
+          "one_week_return": "0.0%",
+          "model_contribution": "0.0%",
+          "max_adverse_return": "0.0%",
+          "max_favorable_return": "0.0%",
+          "review_status": "继续有效",
+          "review_summary": "继续有效，本周期方向收益 0.0%"
+        }
+      ],
       "open_episodes": [
         {
           "asset_id": "FUT_PTA",
