@@ -1,5 +1,6 @@
 {
   "latest_report": "2026-07-06",
+  "latest_report_url": "reports/2026-07-06/",
   "reports": [
     {
       "date": "2026-07-06",
@@ -156,6 +157,16 @@
           "weeks_open": 0
         }
       ],
+      "closed_summaries": [],
+      "url": "reports/2026-07-06/"
+    },
+    {
+      "date": "2026-07-04",
+      "url": "reports/2026-07-04/",
+      "action_counts": {},
+      "signals": [],
+      "reviews": [],
+      "open_episodes": [],
       "closed_summaries": []
     }
   ]
