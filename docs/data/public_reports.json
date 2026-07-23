@@ -1,7 +1,64 @@
 {
-  "latest_report": "2026-07-06",
-  "latest_report_url": "reports/2026-07-06/",
+  "latest_report": "2026-07-22",
+  "latest_report_url": "reports/2026-07-22/",
   "reports": [
+    {
+      "date": "2026-07-22",
+      "url": "reports/2026-07-22/",
+      "model_version": "V2",
+      "action_counts": {},
+      "signals": [],
+      "reviews": [
+        {
+          "asset_id": "FUT_PTA",
+          "asset_name": "精对苯二甲酸期货",
+          "prior_action": "建底仓",
+          "latest_action": "RESEARCH_ONLY",
+          "position_side": "做多",
+          "one_week_return": "5.9%",
+          "model_contribution": "0.3%",
+          "max_adverse_return": "0.8%",
+          "max_favorable_return": "8.7%",
+          "review_status": "继续有效",
+          "review_summary": "继续有效，本周期方向收益 5.9%"
+        },
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "prior_action": "建底仓",
+          "latest_action": "DATA_BLOCKED",
+          "position_side": "做多",
+          "one_week_return": "6.8%",
+          "model_contribution": "0.7%",
+          "max_adverse_return": "0.4%",
+          "max_favorable_return": "8.8%",
+          "review_status": "继续有效",
+          "review_summary": "继续有效，本周期方向收益 6.8%"
+        }
+      ],
+      "open_episodes": [],
+      "closed_summaries": [
+        {
+          "asset_id": "FUT_PTA",
+          "asset_name": "精对苯二甲酸期货",
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "duration_weeks": 2,
+          "cumulative_direction_return": "5.9%",
+          "summary": "本轮信号已结束，持续 2 周，累计方向收益 5.9%。"
+        },
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "duration_weeks": 2,
+          "cumulative_direction_return": "6.8%",
+          "summary": "煤炭指数基金国泰 本轮信号已结束，持续 2 周，累计方向收益 6.8%。"
+        }
+      ],
+      "backtest_comparison": []
+    },
     {
       "date": "2026-07-06",
       "action_counts": {
@@ -158,7 +215,9 @@
         }
       ],
       "closed_summaries": [],
-      "url": "reports/2026-07-06/"
+      "url": "reports/2026-07-06/",
+      "model_version": "legacy_unspecified",
+      "backtest_comparison": []
     },
     {
       "date": "2026-07-04",
@@ -167,7 +226,9 @@
       "signals": [],
       "reviews": [],
       "open_episodes": [],
-      "closed_summaries": []
+      "closed_summaries": [],
+      "model_version": "legacy_unspecified",
+      "backtest_comparison": []
     }
   ]
 }
