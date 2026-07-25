@@ -365,8 +365,22 @@
         }
       ],
       "futures_advice_count": 15,
-      "futures_advice_reviews": [],
-      "futures_advice_review_count": 0,
+      "futures_advice_reviews": [
+        {
+          "asset_name": "精对苯二甲酸期货",
+          "contract": "",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 2,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        }
+      ],
+      "futures_advice_review_count": 1,
       "reviews": [],
       "open_episodes": [],
       "closed_summaries": [
