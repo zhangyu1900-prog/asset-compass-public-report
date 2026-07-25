@@ -1,7 +1,387 @@
 {
-  "latest_report": "2026-07-22",
-  "latest_report_url": "reports/2026-07-22/",
+  "latest_report": "2026-07-24",
+  "latest_report_url": "reports/2026-07-24/",
   "reports": [
+    {
+      "date": "2026-07-24",
+      "url": "reports/2026-07-24/",
+      "model_version": "V2",
+      "action_counts": {
+        "等待": 14
+      },
+      "signals": [
+        {
+          "asset_id": "512800",
+          "asset_name": "银行指数基金华宝",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "515210",
+          "asset_name": "钢铁指数基金国泰",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "159865",
+          "asset_name": "养殖指数基金国泰",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "513970",
+          "asset_name": "恒生消费指数基金景顺",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "159825",
+          "asset_name": "农业指数基金富国",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "560080",
+          "asset_name": "中药指数基金汇添富",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "159766",
+          "asset_name": "旅游指数基金富国",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "515650",
+          "asset_name": "消费50指数基金富国",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "515170",
+          "asset_name": "食品饮料指数基金华夏",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "513330",
+          "asset_name": "恒生互联网指数基金华夏",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "513360",
+          "asset_name": "教育指数基金博时",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "159852",
+          "asset_name": "软件指数基金嘉实",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        },
+        {
+          "asset_id": "159636",
+          "asset_name": "港股通科技30指数基金工银",
+          "action": "等待",
+          "position_side": "做多",
+          "suggested_weight": "0.0%",
+          "weekly_execution_weight": "0.0%",
+          "summary": "公开摘要：本期维持等待，暂不新增模型仓位。"
+        }
+      ],
+      "futures_advice": [
+        {
+          "asset_name": "精对苯二甲酸期货",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 5860.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 4656.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "棉花",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 16005.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "棕榈油",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 9570.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "热轧卷板",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3289.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "玉米",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 2277.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "玻璃",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 908.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "甲醇",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 2755.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "白糖",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 5158.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "纯碱",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 1004.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "聚丙烯",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 8470.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "菜籽粕",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 2467.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "螺纹钢",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3076.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "豆粕",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3225.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        },
+        {
+          "asset_name": "铁矿石",
+          "contract": "",
+          "action": "数据阻断",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 746.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "待人工复核，尚未执行"
+        }
+      ],
+      "futures_advice_count": 15,
+      "futures_advice_reviews": [],
+      "futures_advice_review_count": 0,
+      "reviews": [],
+      "open_episodes": [],
+      "closed_summaries": [
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "duration_weeks": 2,
+          "cumulative_direction_return": "6.8%",
+          "summary": "煤炭指数基金国泰 本轮信号已结束，持续 2 周，累计方向收益 6.8%。"
+        }
+      ],
+      "backtest_comparison": []
+    },
     {
       "date": "2026-07-22",
       "url": "reports/2026-07-22/",
@@ -57,7 +437,11 @@
           "summary": "煤炭指数基金国泰 本轮信号已结束，持续 2 周，累计方向收益 6.8%。"
         }
       ],
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "futures_advice": [],
+      "futures_advice_count": 0,
+      "futures_advice_reviews": [],
+      "futures_advice_review_count": 0
     },
     {
       "date": "2026-07-06",
@@ -217,7 +601,11 @@
       "closed_summaries": [],
       "url": "reports/2026-07-06/",
       "model_version": "legacy_unspecified",
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "futures_advice": [],
+      "futures_advice_count": 0,
+      "futures_advice_reviews": [],
+      "futures_advice_review_count": 0
     },
     {
       "date": "2026-07-04",
@@ -228,7 +616,11 @@
       "open_episodes": [],
       "closed_summaries": [],
       "model_version": "legacy_unspecified",
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "futures_advice": [],
+      "futures_advice_count": 0,
+      "futures_advice_reviews": [],
+      "futures_advice_review_count": 0
     }
   ]
 }
