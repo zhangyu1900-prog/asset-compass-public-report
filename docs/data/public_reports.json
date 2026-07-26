@@ -394,6 +394,71 @@
           "summary": "煤炭指数基金国泰 本轮信号已结束，持续 2 周，累计方向收益 6.8%。"
         }
       ],
+      "completed_trades": [
+        {
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "asset_name": "煤炭指数基金国泰",
+          "direction": "做多",
+          "opening_action": "建底仓",
+          "close_reason": "数据阻断",
+          "model_weight": 0.1,
+          "direction_return": 0.06816143497757854,
+          "model_contribution": 0.006816143497757854,
+          "simulated_pnl_index": 0.6816143497757854,
+          "settled_equity_index": 100.9782090037487,
+          "execution_scope": "模型模拟交易（未核验实盘）",
+          "calculation_status": "已计入模拟曲线"
+        },
+        {
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "asset_name": "精对苯二甲酸期货",
+          "direction": "做多",
+          "opening_action": "建底仓",
+          "close_reason": "仅研究",
+          "model_weight": 0.05,
+          "direction_return": 0.05931893079458073,
+          "model_contribution": 0.0029659465397290368,
+          "simulated_pnl_index": 0.2965946539729037,
+          "settled_equity_index": 100.9782090037487,
+          "execution_scope": "历史期货模型建议（未执行）",
+          "calculation_status": "已计入模拟曲线"
+        }
+      ],
+      "simulated_equity_curve": [
+        {
+          "date": "2026-07-04",
+          "equity_index": 100.0,
+          "settled_trade_count": 0
+        },
+        {
+          "date": "2026-07-06",
+          "equity_index": 100.0,
+          "settled_trade_count": 0
+        },
+        {
+          "date": "2026-07-22",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-07-24",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        }
+      ],
+      "simulated_equity_summary": {
+        "initial_index": 100.0,
+        "ending_index": 100.978209,
+        "total_return": 0.009782090000000077,
+        "trade_count": 2,
+        "curve_trade_count": 2,
+        "winning_trade_count": 2,
+        "losing_trade_count": 0,
+        "win_rate": 1.0,
+        "method": "起始资金指数100；按模型仓位乘以已结束周期方向收益结算；不计手续费、滑点、税费、融资与保证金影响"
+      },
       "backtest_comparison": []
     },
     {
@@ -433,7 +498,10 @@
       "futures_advice": [],
       "futures_advice_count": 0,
       "futures_advice_reviews": [],
-      "futures_advice_review_count": 0
+      "futures_advice_review_count": 0,
+      "completed_trades": [],
+      "simulated_equity_curve": [],
+      "simulated_equity_summary": {}
     },
     {
       "date": "2026-07-06",
@@ -566,7 +634,10 @@
       "futures_advice": [],
       "futures_advice_count": 0,
       "futures_advice_reviews": [],
-      "futures_advice_review_count": 0
+      "futures_advice_review_count": 0,
+      "completed_trades": [],
+      "simulated_equity_curve": [],
+      "simulated_equity_summary": {}
     },
     {
       "date": "2026-07-04",
@@ -581,7 +652,10 @@
       "futures_advice": [],
       "futures_advice_count": 0,
       "futures_advice_reviews": [],
-      "futures_advice_review_count": 0
+      "futures_advice_review_count": 0,
+      "completed_trades": [],
+      "simulated_equity_curve": [],
+      "simulated_equity_summary": {}
     }
   ]
 }
