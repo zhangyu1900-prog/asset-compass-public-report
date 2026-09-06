@@ -7,7 +7,7 @@
   <style>
     :root { color-scheme: light; --ink:#17202a; --muted:#607080; --line:#d8dee6; --accent:#146c5f; --soft:#f4f7f9; --warn:#a64b2a; }
     * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial, "Microsoft YaHei", sans-serif; color:var(--ink); background:#ffffff; }
+    body { margin:0; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color:var(--ink); background:#fbfcfa; }
     main { width:min(1120px, 92vw); margin:0 auto; padding:32px 0 56px; }
     .hero { padding:28px 0 24px; border-bottom:1px solid var(--line); }
     .eyebrow { margin:0 0 8px; color:var(--accent); font-size:14px; font-weight:700; }
@@ -30,7 +30,69 @@
     .chart-subtitle { margin:4px 0 12px; color:var(--muted); font-size:13px; }
     .equity-chart { display:block; width:100%; height:auto; min-height:260px; }
     .movement { font-variant-numeric:tabular-nums; font-weight:700; }
-    @media (max-width:640px) { .equity-chart { min-width:720px; } }
+    html { scroll-behavior:smooth; scroll-padding-top:78px; }
+    a { color:var(--accent); text-underline-offset:4px; }
+    nav { display:flex; gap:6px; flex-wrap:wrap; padding:12px 0; border-bottom:1px solid var(--line); }
+    nav a { padding:8px 12px; text-decoration:none; border-radius:6px; font-size:14px; }
+    nav a:hover, nav a:focus-visible { background:#e8f0eb; }
+    :focus-visible { outline:3px solid #9a6822; outline-offset:3px; }
+    .overview { padding:26px 0; }
+    .overview h2 { font-size:26px; line-height:1.5; margin:4px 0; max-width:900px; }
+    .overview-grid { grid-template-columns:repeat(4, 1fr) 1.6fr; margin-top:20px; }
+    .overview .card { border-top:3px solid var(--accent); }
+    .overview .health { border-top-color:#a76d26; background:#fffaf1; }
+    .health strong { display:block; margin-top:8px; line-height:1.5; }
+    .health p { font-size:13px; margin:6px 0 0; }
+    .chapter { border-top:1px solid var(--line); margin-top:30px; padding-top:12px; }
+    .changes { padding:2px 20px 10px; border-left:3px solid var(--accent); background:#f0f5f1; }
+    .changes h2 { font-size:18px; margin-top:14px; }
+    .notice { margin:18px 0 0; padding:14px 18px; border:1px solid #e0cda6; background:#fffaf1; border-radius:8px; font-size:14px; }
+    .notice p { margin:5px 0 0; }
+    details { margin:14px 0; border:1px solid var(--line); border-radius:8px; background:white; padding:12px 16px; }
+    summary { cursor:pointer; font-weight:600; line-height:1.65; }
+    details section h2 { font-size:18px; }
+    .compact { padding:10px 0; margin:0; font-size:14px; font-style:normal; }
+    .signal-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:14px; }
+    .signal-card { border:1px solid var(--line); border-left:4px solid var(--accent); background:#fff; border-radius:9px; padding:18px; }
+    .signal-card h3 { font-size:20px; margin:0 0 4px; line-height:1.4; }
+    .signal-card .contract { font-size:13px; color:var(--muted); margin:4px 0 12px; }
+    .signal-card dl { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:16px 0; }
+    .signal-card dt { color:var(--muted); font-size:13px; }
+    .signal-card dd { margin:5px 0 0; font-variant-numeric:tabular-nums; font-weight:650; font-size:18px; }
+    .signal-card .risk dd { color:#925b18; }
+    .signal-card p { margin:10px 0 0; font-size:14px; }
+    .tag-wait { color:#59666d; background:#edf0f2; }
+    .tag-risk { color:#925b18; background:#fff3df; }
+    .numeric { font-variant-numeric:tabular-nums; text-align:right; }
+    footer { display:flex; justify-content:space-between; gap:15px; margin-top:40px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    .chart-shell { padding:18px 12px; }
+    .equity-chart { min-height:0; aspect-ratio:920/300; }
+    .chart-value { font-size:22px; font-weight:700; margin:8px 0; }
+    .chart-data { font-size:13px; }
+    .chart-mobile { display:none; }
+    @media (max-width:760px) {
+      main { width:auto; margin:0 18px; padding-top:12px; }
+      h1 { font-size:28px; line-height:1.35; }
+      .hero { padding:24px 0 16px; }
+      .overview h2 { font-size:22px; }
+      .overview-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .metric { font-size:25px; }
+      .health p { font-size:12px; } .overview-grid .health { grid-column:1/-1; }
+      nav { gap:0; } nav a { padding:8px; font-size:13px; }
+      .responsive-table thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+      .responsive-table, .responsive-table tbody { display:block; }
+      .responsive-table tr { display:block; padding:10px 12px; border:1px solid var(--line); border-radius:8px; margin:10px 0; background:#fff; }
+      .responsive-table td { display:grid; grid-template-columns:minmax(90px, 34%) minmax(0,1fr); gap:10px; border:0; padding:5px 0; overflow-wrap:anywhere; text-align:left; }
+      .responsive-table td::before { content:attr(data-label); color:var(--muted); font-size:12px; }
+      .responsive-table td:first-child { font-weight:650; }
+      .x-intermediate, .chart-desktop { display:none; }
+      .chart-mobile { display:block; }
+      .chart-mobile .equity-chart { aspect-ratio:420/300; }
+      .chart-mobile .equity-chart text { font-size:16px; }
+      footer { flex-direction:column; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { nav, footer { display:none; } main { width:100%; } details { break-inside:avoid; } }
   </style>
 </head>
 <body><main>
@@ -40,17 +102,15 @@
           <p>最新报告：2026-09-04</p>
           <a class="button" href="reports/2026-09-04/">打开 2026-09-04 周报</a>
         </section>
+        <section id="overview" class="overview"><p class="eyebrow">本周结论</p><h2>场内基金暂无新增调整信号，期货有 1 项重点建议。</h2><p class="muted">以本期公开记录为准；等待、数据不足和已成交分别呈现。</p><div class="grid overview-grid"><div class="card"><div class="muted">整体模拟收益</div><div class="metric">暂不可算</div></div><div class="card"><div class="muted">场内基金调整</div><div class="metric">0 项</div></div><div class="card"><div class="muted">期货重点建议</div><div class="metric">1 项</div></div><div class="card"><div class="muted">等待观察</div><div class="metric">22 项</div></div><div class="card health"><div class="muted">数据状态</div><strong>原运行存在降级</strong><p>前沿求解器不可用；场内基金独立研究组件缺失。保留历史信号，不将等待解释为完整模型确认。</p></div></div></section>
+        <section class="combined-account"><h2>整体模拟收益</h2><p class="notice"><strong>暂不可计算 · 场内基金独立账户尚未启用</strong><br>场内基金和期货两个独立账户都有同日有效估值后，从共同起点开始统计；历史信号贡献不作为账户资产补入。</p></section>
         <section>
           <h2>历史报告</h2>
-          <table>
+          <table class="responsive-table">
             <thead><tr><th>日期</th><th>公开信号数</th><th>动作分布</th></tr></thead>
-            <tbody><tr><td><a href="reports/2026-09-04/">2026-09-04</a></td><td>8</td><td>等待 8</td></tr><tr><td><a href="reports/2026-08-28/">2026-08-28</a></td><td>8</td><td>等待 8</td></tr><tr><td><a href="reports/2026-08-21/">2026-08-21</a></td><td>8</td><td>等待 8</td></tr><tr><td><a href="reports/2026-08-14/">2026-08-14</a></td><td>0</td><td>-</td></tr><tr><td><a href="reports/2026-08-07/">2026-08-07</a></td><td>8</td><td>等待 8</td></tr><tr><td><a href="reports/2026-07-31/">2026-07-31</a></td><td>8</td><td>等待 8</td></tr><tr><td><a href="reports/2026-07-24/">2026-07-24</a></td><td>14</td><td>等待 14</td></tr><tr><td><a href="reports/2026-07-22/">2026-07-22</a></td><td>0</td><td>-</td></tr><tr><td><a href="reports/2026-07-06/">2026-07-06</a></td><td>10</td><td>建底仓 1，等待 10</td></tr><tr><td><a href="reports/2026-07-04/">2026-07-04</a></td><td>0</td><td>-</td></tr></tbody>
+            <tbody><tr><td data-label="日期"><a href="reports/2026-09-04/">2026-09-04</a></td><td data-label="公开信号数">8</td><td data-label="动作分布">等待 8</td></tr><tr><td data-label="日期"><a href="reports/2026-08-28/">2026-08-28</a></td><td data-label="公开信号数">8</td><td data-label="动作分布">等待 8</td></tr><tr><td data-label="日期"><a href="reports/2026-08-21/">2026-08-21</a></td><td data-label="公开信号数">8</td><td data-label="动作分布">等待 8</td></tr><tr><td data-label="日期"><a href="reports/2026-08-14/">2026-08-14</a></td><td data-label="公开信号数">0</td><td data-label="动作分布">-</td></tr><tr><td data-label="日期"><a href="reports/2026-08-07/">2026-08-07</a></td><td data-label="公开信号数">8</td><td data-label="动作分布">等待 8</td></tr><tr><td data-label="日期"><a href="reports/2026-07-31/">2026-07-31</a></td><td data-label="公开信号数">8</td><td data-label="动作分布">等待 8</td></tr><tr><td data-label="日期"><a href="reports/2026-07-24/">2026-07-24</a></td><td data-label="公开信号数">14</td><td data-label="动作分布">等待 14</td></tr><tr><td data-label="日期"><a href="reports/2026-07-22/">2026-07-22</a></td><td data-label="公开信号数">0</td><td data-label="动作分布">-</td></tr><tr><td data-label="日期"><a href="reports/2026-07-06/">2026-07-06</a></td><td data-label="公开信号数">10</td><td data-label="动作分布">建底仓 1，等待 10</td></tr><tr><td data-label="日期"><a href="reports/2026-07-04/">2026-07-04</a></td><td data-label="公开信号数">0</td><td data-label="动作分布">-</td></tr></tbody>
           </table>
         </section>
     
-        <section><h2>本周动作分布</h2><div class="grid"><div class="card"><div class="muted">等待</div><div class="metric">8</div></div></div></section>
-        <section><h2>当期交易建议</h2><div class="table-wrap"><table><thead><tr><th>标的</th><th>动作</th><th>方向</th><th>目标仓位</th><th>本周执行</th><th>摘要</th></tr></thead><tbody><tr><td>银行指数基金华宝</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>养殖指数基金国泰</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>通信指数基金国泰</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>工业母机指数基金国泰</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>中药指数基金汇添富</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>旅游指数基金富国</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>食品饮料指数基金华夏</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr><tr><td>港股通科技30指数基金工银</td><td>等待</td><td>做多</td><td>0.0%</td><td>0.0%</td><td>公开摘要：本期维持等待，暂不新增模型仓位。</td></tr></tbody></table></div></section>
-        
-        <section><h2>上期信号复盘</h2><p class="empty">暂无</p></section>
         </main></body>
 </html>

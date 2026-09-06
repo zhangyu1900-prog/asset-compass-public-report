@@ -1,0 +1,9 @@
+{
+  "report_date": "2026-09-04",
+  "revision_date": "2026-09-06",
+  "scope": "presentation_and_method_disclosure",
+  "original_html_sha256": "43ac675320ed1f5cccd4e924c60f070a7292ca99188aa9ce242ee42e5760759e",
+  "revised_html_sha256": "1fddea2acb89e62ad8ba3482b25a0a48871dba5033b25fa9949072855dc8f375",
+  "model_decisions_recomputed": false,
+  "note": "本次修订版式、品种名称及统计口径，并补充原运行降级披露。9月4日历史建议、参考价格、仓位与收益数值保持原记录，不使用后来的研究重算。该期采用旧版资本资产定价与前沿模型，非严格新版；原求解器不可用，前沿仅生成诊断结果。期货独立账户本期从空仓初始化，建议不等于已成交。"
+}

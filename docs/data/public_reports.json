@@ -5,7 +5,7 @@
     {
       "date": "2026-09-04",
       "url": "reports/2026-09-04/",
-      "model_version": "V2",
+      "model_version": "capm_frontier",
       "action_counts": {
         "等待": 8
       },
@@ -100,7 +100,7 @@
           "review_status": "模型跟踪，无需人工确认"
         },
         {
-          "asset_name": "",
+          "asset_name": "聚氯乙烯期货",
           "contract": "V2701.DCE",
           "action": "等待",
           "direction": "空仓",
@@ -329,7 +329,7 @@
           "summary": "持有多头，复盘状态：有效，期间方向表现5.2%"
         },
         {
-          "asset_name": "",
+          "asset_name": "聚氯乙烯期货",
           "contract": "V2701.DCE",
           "prior_action": "等待",
           "direction": "空仓",
@@ -607,7 +607,7 @@
           "simulated_pnl_index": 0.6816143497757854,
           "settled_equity_index": 100.9782090037487,
           "execution_scope": "模型模拟交易（未核验实盘）",
-          "calculation_status": "已计入模拟曲线"
+          "calculation_status": "已计入信号贡献曲线"
         },
         {
           "opened_at": "2026-07-04",
@@ -622,7 +622,7 @@
           "simulated_pnl_index": 0.2965946539729037,
           "settled_equity_index": 100.9782090037487,
           "execution_scope": "历史期货模型建议（未执行）",
-          "calculation_status": "已计入模拟曲线"
+          "calculation_status": "已计入信号贡献曲线"
         }
       ],
       "simulated_equity_curve": [
@@ -686,9 +686,24 @@
         "winning_trade_count": 2,
         "losing_trade_count": 0,
         "win_rate": 1.0,
-        "method": "起始资金指数100；按模型仓位乘以已结束周期方向收益结算；不计手续费、滑点、税费、融资与保证金影响"
+        "method": "历史信号贡献指数从100起步，按入场模型权重乘以已结束周期方向收益累计；不含完整持仓路径及交易成本，非账户净值。"
       },
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "etf_simulation": {},
+      "combined_simulation": {
+        "status": "场内基金独立账户尚未启用",
+        "curve": []
+      },
+      "presentation_revision": {
+        "date": "2026-09-06",
+        "summary": "本次修订版式、品种名称及统计口径，并补充原运行降级披露。9月4日历史建议、参考价格、仓位与收益数值保持原记录，不使用后来的研究重算。该期采用旧版资本资产定价与前沿模型，非严格新版；原求解器不可用，前沿仅生成诊断结果。期货独立账户本期从空仓初始化，建议不等于已成交。",
+        "original_model_label": "V2",
+        "original_html_sha256": "43ac675320ed1f5cccd4e924c60f070a7292ca99188aa9ce242ee42e5760759e"
+      },
+      "data_status": {
+        "label": "原运行存在降级",
+        "detail": "前沿求解器不可用；场内基金独立研究组件缺失。保留历史信号，不将等待解释为完整模型确认。"
+      }
     },
     {
       "date": "2026-08-28",
