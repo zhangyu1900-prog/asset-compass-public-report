@@ -1,7 +1,664 @@
 {
-  "latest_report": "2026-09-04",
-  "latest_report_url": "reports/2026-09-04/",
+  "latest_report": "2026-09-11",
+  "latest_report_url": "reports/2026-09-11/",
   "reports": [
+    {
+      "date": "2026-09-11",
+      "url": "reports/2026-09-11/",
+      "model_version": "capm_frontier_v2",
+      "data_status": {
+        "label": "存在数据阻断",
+        "detail": "场内基金共 117 项，数据阻断 114 项；动作层通过不代表研究与权益数据完整。"
+      },
+      "action_counts": {},
+      "signals": [],
+      "futures_advice": [
+        {
+          "asset_name": "精对苯二甲酸期货",
+          "contract": "TA2701.ZCE",
+          "action": "持有多头",
+          "direction": "多头",
+          "target_lots": 2,
+          "delta_lots": 0,
+          "reference_price": 6250.0,
+          "stop_price": 6050.0,
+          "planned_margin": 6250.0,
+          "planned_max_loss": 2000.0,
+          "confidence": "中",
+          "invalidation": "综合信号分数低于60时退出多头",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "聚氯乙烯期货",
+          "contract": "V2701.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 5028.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "棉花",
+          "contract": "CF2701.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 16380.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "棕榈油",
+          "contract": "P2701.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 10035.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "热轧卷板",
+          "contract": "HC2701.SHF",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3325.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "玉米",
+          "contract": "C2611.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 2255.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "玻璃",
+          "contract": "FG2701.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 973.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "甲醇",
+          "contract": "MA2610.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3380.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "白糖",
+          "contract": "SR2701.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 5441.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "纯碱",
+          "contract": "SA2701.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 1065.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "聚丙烯",
+          "contract": "PP2701.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 8882.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "菜籽粕",
+          "contract": "RM2611.ZCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 2326.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "螺纹钢",
+          "contract": "RB2701.SHF",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3108.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "豆粕",
+          "contract": "M2701.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 3402.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        },
+        {
+          "asset_name": "铁矿石",
+          "contract": "I2701.DCE",
+          "action": "等待",
+          "direction": "空仓",
+          "target_lots": 0,
+          "delta_lots": 0,
+          "reference_price": 718.0,
+          "stop_price": null,
+          "planned_margin": 0.0,
+          "planned_max_loss": 0.0,
+          "confidence": "中",
+          "invalidation": "信号未达到开仓阈值，保持空仓",
+          "review_status": "模型跟踪，无需人工确认"
+        }
+      ],
+      "futures_advice_count": 15,
+      "futures_advice_reviews": [
+        {
+          "asset_name": "精对苯二甲酸期货",
+          "contract": "TA2701.ZCE",
+          "prior_action": "开多",
+          "direction": "多头",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": 0.055386693684565946,
+          "max_adverse_return": -0.01317122593718334,
+          "max_favorable_return": 0.08172914555893285,
+          "stop_triggered": "否",
+          "review_status": "有效",
+          "summary": "开多，复盘状态：有效，期间方向表现5.5%"
+        },
+        {
+          "asset_name": "品种名称待补齐",
+          "contract": "V2701.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "棉花",
+          "contract": "CF2701.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "棕榈油",
+          "contract": "P2701.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "热轧卷板",
+          "contract": "HC2701.SHF",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "玉米",
+          "contract": "C2611.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "玻璃",
+          "contract": "FG2701.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "甲醇",
+          "contract": "MA2610.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "白糖",
+          "contract": "SR2701.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "纯碱",
+          "contract": "SA2701.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "聚丙烯",
+          "contract": "PP2701.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "菜籽粕",
+          "contract": "RM2611.ZCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "螺纹钢",
+          "contract": "RB2701.SHF",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "豆粕",
+          "contract": "M2701.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        },
+        {
+          "asset_name": "铁矿石",
+          "contract": "I2701.DCE",
+          "prior_action": "等待",
+          "direction": "空仓",
+          "holding_days": 7,
+          "observation_end": "2026-09-11",
+          "recorded_as_of": "2026-09-11",
+          "revision": 1,
+          "period_return": null,
+          "max_adverse_return": null,
+          "max_favorable_return": null,
+          "stop_triggered": "",
+          "review_status": "空仓观察",
+          "summary": "等待，复盘状态：空仓观察"
+        }
+      ],
+      "futures_advice_review_count": 15,
+      "futures_review_summary": {
+        "total_signals": 108,
+        "evaluable_signals": 8,
+        "missing_signals": 0,
+        "observation_signals": 88,
+        "blocked_signals": 12,
+        "revised_signals": 0
+      },
+      "futures_simulation": {
+        "scope": "独立期货模型模拟，非实盘",
+        "started_at": "2026-09-04",
+        "status": "可复盘",
+        "ending_index": 135.94,
+        "total_return": 0.35939999999999994,
+        "max_drawdown": 0.016674245869334525,
+        "closed_count": 0,
+        "win_rate": null,
+        "curve": [
+          {
+            "date": "2026-09-04",
+            "equity_index": 100.0,
+            "status": "可复盘"
+          },
+          {
+            "date": "2026-09-11",
+            "equity_index": 135.94,
+            "status": "可复盘"
+          }
+        ],
+        "closed_cycles": []
+      },
+      "etf_simulation": {
+        "scope": "ETF独立模型模拟，非实盘",
+        "started_at": "2026-09-11",
+        "ending_index": 100.0,
+        "curve": [
+          {
+            "date": "2026-09-11",
+            "equity_index": 100.0,
+            "status": "可复盘"
+          }
+        ]
+      },
+      "combined_simulation": {
+        "status": "可复盘",
+        "started_at": "2026-09-11",
+        "ending_index": 100.0,
+        "total_return": 0.0,
+        "period_return": null,
+        "observed_max_drawdown": null,
+        "etf_weight": 0.8803281863478705,
+        "futures_weight": 0.11967181365212952,
+        "curve": [
+          {
+            "date": "2026-09-11",
+            "equity_index": 100.0,
+            "status": "可复盘"
+          }
+        ],
+        "scope": "两账户共同起点的权益加总；无外部资金流；仅周度观测"
+      },
+      "reviews": [],
+      "open_episodes": [],
+      "closed_summaries": [
+        {
+          "asset_id": "515220",
+          "asset_name": "煤炭指数基金国泰",
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "duration_weeks": 2,
+          "cumulative_direction_return": "6.8%",
+          "summary": "煤炭指数基金国泰 本轮信号已结束，持续 2 周，累计方向收益 6.8%。"
+        }
+      ],
+      "completed_trades": [
+        {
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "asset_name": "煤炭指数基金国泰",
+          "direction": "做多",
+          "opening_action": "建底仓",
+          "close_reason": "数据阻断",
+          "model_weight": 0.1,
+          "direction_return": 0.06816143497757854,
+          "model_contribution": 0.006816143497757854,
+          "simulated_pnl_index": 0.6816143497757854,
+          "settled_equity_index": 100.9782090037487,
+          "execution_scope": "模型模拟交易（未核验实盘）",
+          "calculation_status": "已计入信号贡献曲线"
+        },
+        {
+          "opened_at": "2026-07-04",
+          "closed_at": "2026-07-22",
+          "asset_name": "精对苯二甲酸期货",
+          "direction": "做多",
+          "opening_action": "建底仓",
+          "close_reason": "仅研究",
+          "model_weight": 0.05,
+          "direction_return": 0.05931893079458073,
+          "model_contribution": 0.0029659465397290368,
+          "simulated_pnl_index": 0.2965946539729037,
+          "settled_equity_index": 100.9782090037487,
+          "execution_scope": "历史期货模型建议（未执行）",
+          "calculation_status": "已计入信号贡献曲线"
+        }
+      ],
+      "simulated_equity_curve": [
+        {
+          "date": "2026-07-04",
+          "equity_index": 100.0,
+          "settled_trade_count": 0
+        },
+        {
+          "date": "2026-07-06",
+          "equity_index": 100.0,
+          "settled_trade_count": 0
+        },
+        {
+          "date": "2026-07-22",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-07-24",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-07-31",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-08-07",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-08-14",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-08-21",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-08-28",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-09-04",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        },
+        {
+          "date": "2026-09-11",
+          "equity_index": 100.978209,
+          "settled_trade_count": 2
+        }
+      ],
+      "simulated_equity_summary": {
+        "initial_index": 100.0,
+        "ending_index": 100.978209,
+        "total_return": 0.009782090000000077,
+        "trade_count": 2,
+        "curve_trade_count": 2,
+        "winning_trade_count": 2,
+        "losing_trade_count": 0,
+        "win_rate": 1.0,
+        "method": "历史信号贡献指数从100起步；按模型仓位乘以已结束周期方向收益累计；不是账户净值，不计手续费、滑点、税费、融资与保证金影响"
+      },
+      "backtest_comparison": []
+    },
     {
       "date": "2026-09-04",
       "url": "reports/2026-09-04/",
@@ -1317,7 +1974,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-08-21",
@@ -2121,7 +2780,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-08-14",
@@ -2454,7 +3115,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-08-07",
@@ -3053,7 +3716,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-07-31",
@@ -3647,7 +4312,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-07-24",
@@ -4108,7 +4775,9 @@
       },
       "backtest_comparison": [],
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-07-22",
@@ -4152,7 +4821,9 @@
       "simulated_equity_curve": [],
       "simulated_equity_summary": {},
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-07-06",
@@ -4290,7 +4961,9 @@
       "simulated_equity_curve": [],
       "simulated_equity_summary": {},
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     },
     {
       "date": "2026-07-04",
@@ -4310,7 +4983,9 @@
       "simulated_equity_curve": [],
       "simulated_equity_summary": {},
       "futures_review_summary": {},
-      "futures_simulation": {}
+      "futures_simulation": {},
+      "etf_simulation": {},
+      "combined_simulation": {}
     }
   ]
 }
