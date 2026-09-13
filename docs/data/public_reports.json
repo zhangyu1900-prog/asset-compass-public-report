@@ -7,8 +7,8 @@
       "url": "reports/2026-09-11/",
       "model_version": "capm_frontier_v2",
       "data_status": {
-        "label": "存在数据阻断",
-        "detail": "场内基金共 117 项，数据阻断 114 项；动作层通过不代表研究与权益数据完整。"
+        "label": "原运行有费率缺口",
+        "detail": "9月11日原运行有114项年费率缺失。9月13日起统一按0%假设，后续不再因缺费率阻断；本期建议保留原记录。"
       },
       "action_counts": {},
       "signals": [],
@@ -528,21 +528,38 @@
       },
       "combined_simulation": {
         "status": "可复盘",
-        "started_at": "2026-09-11",
-        "ending_index": 100.0,
-        "total_return": 0.0,
-        "period_return": null,
-        "observed_max_drawdown": null,
+        "started_at": "2026-09-04",
+        "ending_index": 103.267273,
+        "initial_conditions": {
+          "total_capital": 110000.0,
+          "etf_capital": 100000.0,
+          "futures_capital": 10000.0,
+          "capital_type": "固定模型初始分配，非真实账户信息"
+        },
+        "total_return": 0.03267273000000004,
+        "period_return": 0.03267273000000004,
+        "observed_max_drawdown": 0.0,
         "etf_weight": 0.8803281863478705,
         "futures_weight": 0.11967181365212952,
         "curve": [
           {
-            "date": "2026-09-11",
+            "date": "2026-09-04",
             "equity_index": 100.0,
+            "status": "可复盘"
+          },
+          {
+            "date": "2026-09-11",
+            "equity_index": 103.267273,
             "status": "可复盘"
           }
         ],
-        "scope": "两账户共同起点的权益加总；无外部资金流；仅周度观测"
+        "etf_contribution": 0.0,
+        "futures_contribution": 0.03267272727272727,
+        "futures_realized_contribution": 0.0,
+        "futures_unrealized_contribution": 0.03272727272727273,
+        "futures_fee_contribution": 5.4545454545454546e-05,
+        "migration_note": "2026-09-13统一展示修订：以原模型预算11万元为总账户初始资金；ETF于9月11日首次建账前的10万元作为未投入资金、收益按0计。已核验ETF无模拟成交。保留内部额度，不补造历史成交，不拼接旧信号收益。",
+        "scope": "统一总账户；ETF与期货保留内部额度；无外部资金流；仅周度观测"
       },
       "reviews": [],
       "open_episodes": [],
@@ -657,7 +674,20 @@
         "win_rate": 1.0,
         "method": "历史信号贡献指数从100起步；按模型仓位乘以已结束周期方向收益累计；不是账户净值，不计手续费、滑点、税费、融资与保证金影响"
       },
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "account_activity": [
+        {
+          "date": "2026-09-07",
+          "sleeve": "期货",
+          "asset_name": "精对苯二甲酸期货",
+          "action": "模拟建仓",
+          "scope": "模型模拟，非实盘"
+        }
+      ],
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-09-04",
@@ -1352,10 +1382,8 @@
         "curve": []
       },
       "presentation_revision": {
-        "date": "2026-09-06",
-        "summary": "本次修订版式、品种名称及统计口径，并补充原运行降级披露。9月4日历史建议、参考价格、仓位与收益数值保持原记录，不使用后来的研究重算。该期采用旧版资本资产定价与前沿模型，非严格新版；原求解器不可用，前沿仅生成诊断结果。期货独立账户本期从空仓初始化，建议不等于已成交。",
-        "original_model_label": "V2",
-        "original_html_sha256": "43ac675320ed1f5cccd4e924c60f070a7292ca99188aa9ce242ee42e5760759e"
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
       },
       "data_status": {
         "label": "原运行存在降级",
@@ -1976,7 +2004,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-08-21",
@@ -2782,7 +2814,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-08-14",
@@ -3117,7 +3153,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-08-07",
@@ -3718,7 +3758,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-07-31",
@@ -4314,7 +4358,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-07-24",
@@ -4777,7 +4825,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-07-22",
@@ -4823,7 +4875,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-07-06",
@@ -4963,7 +5019,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     },
     {
       "date": "2026-07-04",
@@ -4985,7 +5045,11 @@
       "futures_review_summary": {},
       "futures_simulation": {},
       "etf_simulation": {},
-      "combined_simulation": {}
+      "combined_simulation": {},
+      "presentation_revision": {
+        "date": "2026-09-13",
+        "summary": "统一总账户展示，仅保留总资金曲线。历史信号改为折叠档案；建议与成交账本保持原记录。最新总账户以原模型总预算为起点，场内基金建账前预留资金按零收益现金列入；公开固定初始分配。基金零年费假设从9月13日起用于后续评估，本期历史建议未重算。"
+      }
     }
   ]
 }

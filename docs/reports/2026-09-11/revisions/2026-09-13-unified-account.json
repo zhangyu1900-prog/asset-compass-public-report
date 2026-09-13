@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-09-11",
+  "revision_date": "2026-09-13",
+  "scope": "unified_reporting_and_presentation",
+  "model_decisions_recomputed": false,
+  "original_sha256": {
+    "index.html": "08e269a12aff1761c23f9d311896c1b5d5c1505430154d27101480ef10f71d38",
+    "data/public_reports.json": "805df3d01405252b3c42ed1f5b30a3f8f551d43a6daeec0412137597c9319eb6",
+    "reports/2026-09-11/index.html": "fb5fac5a288e3df3139285343d505fc4ed471d422249ddf9243baa834d971c12",
+    "reports/2026-09-04/index.html": "1fddea2acb89e62ad8ba3482b25a0a48871dba5033b25fa9949072855dc8f375",
+    "reports/2026-08-28/index.html": "2198cd5c592c8b79267ad7b210341506bceee25f3e5a74f72472d3cc5ce9fee3",
+    "reports/2026-08-21/index.html": "77afcbcc402461e0dcb256e14226f02531f3e40a56e575b68442f3d8bbc4f94c",
+    "reports/2026-08-14/index.html": "2e43b5e243117b46f85f70a06d39f6dee5d4180af54adf841022e72938e7d1f8",
+    "reports/2026-08-07/index.html": "f48747a656eff08e7f46ed69d2619fc4ef4e3c4570ae043b58c7dd74c6750cd4",
+    "reports/2026-07-31/index.html": "bd10440ad6914a337733f048e3adbbfba5277e421dc19c06eb66897ed1a5766c",
+    "reports/2026-07-24/index.html": "9249762bd8920b53f578e3bd3575019c69736f688082ff1cc4e46bbe59bda69c",
+    "reports/2026-07-22/index.html": "06452d30e51f2171ec7e8898fa5809258aafc2dc935c5893a47ba4ec18fe8e86",
+    "reports/2026-07-06/index.html": "a3e470dd39369ce61a762015f32ff6a010a784b752949ca2c48177ed4bb57c58",
+    "reports/2026-07-04/index.html": "4720c3eae4eda864532ebbb3774f4ac54cfb12ca238f4e99cfb0ee199c1d1246"
+  },
+  "revised_sha256": {
+    "index.html": "47d11c760c8daa3506e5be9f53a9c7e876321b25cf4ad698492b6676bbd8862f",
+    "data/public_reports.json": "0078ef21c49564a6f7c12a5c97c8621cbbbf1b82cf41cd63c9cbe820d6f6c15b",
+    "reports/2026-09-11/index.html": "cf18f494c385426aee7ce956410f2e398f9ac94f13b8a1daee32dc352ed166fb",
+    "reports/2026-09-04/index.html": "12aab99238a350a21da3c8e81be7e8f73f91a4d5482dcc18ac0e668b22846e1d",
+    "reports/2026-08-28/index.html": "9a3dd4d7d31e60fbbc70b69271bc1f85f2e971c84948238b59b389530c118c9f",
+    "reports/2026-08-21/index.html": "80dcfdcb1e04523726c36ffebb9fc66953ade44d80ab8e7ccd7755ce87c3fc55",
+    "reports/2026-08-14/index.html": "2d5084da44aba1a27212dafd61ba646acf27ea3e5f187961c7c2128da4f300ae",
+    "reports/2026-08-07/index.html": "862ead871504e19bda79d463a886f46d27d2dca9d1aabc72722bfb175a910e8c",
+    "reports/2026-07-31/index.html": "46c27ca1b22c2b429b36e62cf21f259abf90bf7d9c6d28f40366be6ce3c16455",
+    "reports/2026-07-24/index.html": "167a0c1059138620942a9bb92e26bbd950fc183a255ba723a3ab90b52c13595b",
+    "reports/2026-07-22/index.html": "d6572ef0a01117a3d1201d900be36447bd577b1556c0237a3e599e5fd0da02ff",
+    "reports/2026-07-06/index.html": "8ee34b0ec906e20b92b103ba8f9461971deaa8af4c71bd13e3290d2c7de75d60",
+    "reports/2026-07-04/index.html": "41db632250a377c1862e443a69c9d98f4cbe653b15709a296e59b9afbc1161ad"
+  }
+}

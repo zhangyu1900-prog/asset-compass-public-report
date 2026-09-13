@@ -38,7 +38,7 @@
     :focus-visible { outline:3px solid #9a6822; outline-offset:3px; }
     .overview { padding:26px 0; }
     .overview h2 { font-size:26px; line-height:1.5; margin:4px 0; max-width:900px; }
-    .overview-grid { grid-template-columns:repeat(4, 1fr) 1.6fr; margin-top:20px; }
+    .overview-grid { grid-template-columns:repeat(3, 1fr) 1.6fr; margin-top:20px; }
     .overview .card { border-top:3px solid var(--accent); }
     .overview .health { border-top-color:#a76d26; background:#fffaf1; }
     .health strong { display:block; margin-top:8px; line-height:1.5; }
@@ -92,6 +92,34 @@
       footer { flex-direction:column; }
     }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    .initial-conditions { display:flex; flex-wrap:wrap; align-items:center; gap:10px 24px; background:#e4ede4; border-left:3px solid #527760; border-radius:6px; padding:14px 16px; margin:0 0 20px; font-size:14px; }
+    .initial-conditions > strong { color:#244b3a; }
+    .initial-conditions b { font-variant-numeric:tabular-nums; white-space:nowrap; }
+    .initial-conditions small { flex-basis:100%; color:#52665a; }
+    .account-panel { margin:28px 0; padding:28px; border:1px solid #cbdad1; border-radius:20px; background:#f2f6f1; }
+    .account-heading { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .account-heading h2 { margin:0 0 20px; font-size:28px; }
+    .account-heading > p { text-align:right; font-size:13px; }
+    .account-metrics { grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:#ccdad0; border:1px solid #ccdad0; border-radius:12px; overflow:hidden; }
+    .account-metrics .card { border:0; border-radius:0; background:#fff; padding:20px 16px; }
+    .account-metrics .card:first-child { background:#183e33; color:#fff; }
+    .account-metrics .card:first-child .muted { color:#cbdfd2; }
+    .account-metrics .metric { margin-top:8px; font-size:30px; font-variant-numeric:tabular-nums; }
+    .account-panel .chart-shell { border:0; padding:20px; border-radius:12px; margin-top:20px; }
+    .account-panel td:nth-child(2) { font-variant-numeric:tabular-nums; font-weight:700; color:#146c5f; }
+    .account-panel details { background:rgba(255,255,255,.6); border-radius:8px; padding:10px 14px; margin-top:16px; }
+    .account-panel summary { cursor:pointer; font-weight:600; }
+    .account-panel svg text { fill:#607080; font-size:12px; }
+    @media(max-width:650px) {
+      .account-panel { padding:16px; border-radius:14px; }
+      .account-heading { align-items:flex-start; gap:8px; }
+      .account-heading h2 { font-size:24px; }
+      .account-heading .eyebrow { font-size:12px; }
+      .account-metrics { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .account-metrics .card { padding:16px 12px; }
+      .account-metrics .metric { font-size:25px; }
+      .account-panel .chart-shell { padding:12px 4px; }
+    }
     @media print { nav, footer { display:none; } main { width:100%; } details { break-inside:avoid; } }
   </style>
 </head>
@@ -102,8 +130,8 @@
           <p>最新报告：2026-09-11</p>
           <a class="button" href="reports/2026-09-11/">打开 2026-09-11 周报</a>
         </section>
-        <section id="overview" class="overview"><p class="eyebrow">本周结论</p><h2>场内基金暂无新增调整信号，期货有 1 项重点建议。</h2><p class="muted">以本期公开记录为准；等待、数据不足和已成交分别呈现。</p><div class="grid overview-grid"><div class="card"><div class="muted">整体模拟收益</div><div class="metric">+0.00%</div></div><div class="card"><div class="muted">场内基金调整</div><div class="metric">0 项</div></div><div class="card"><div class="muted">期货重点建议</div><div class="metric">1 项</div></div><div class="card"><div class="muted">等待观察</div><div class="metric">14 项</div></div><div class="card health"><div class="muted">数据状态</div><strong>存在数据阻断</strong><p>场内基金共 117 项，数据阻断 114 项；动作层通过不代表研究与权益数据完整。</p></div></div></section>
-        <section class="combined-account"><h2>整体模拟收益</h2><p class="muted">共同起点 2026-09-11 · 可复盘</p><div class="grid"><div class="card"><div class="muted">整体累计收益</div><div class="metric">+0.00%</div></div><div class="card"><div class="muted">当期变化</div><div class="metric">—</div></div><div class="card"><div class="muted">整体资金指数</div><div class="metric">100.00</div></div><div class="card"><div class="muted">周度观测最大回撤</div><div class="metric">—</div></div></div><p>当前权益占比：场内基金 88.0% · 期货 12.0%。</p><p class="empty">模拟资金曲线的有效数据点不足。</p><details><summary>整体收益如何计算</summary><p>整体权益＝场内基金账户权益＋期货账户权益；累计收益＝当前整体权益÷共同起点整体权益－1，不是两个收益率的简单平均。各账户启用前、共同起点前的表现不计入整体曲线。当前模型无外部追加或提取资金；以后若引入资金流，须先调整收益口径。</p><p>权益包含各自已核算的现金、持仓市值或浮动盈亏、应收分红与模拟费用；分红和份额变化覆盖不足会限制结果。回撤仅按周度观测，不等于日内最大回撤。任一侧缺少同日有效估值时，不沿用旧值冒充本期整体收益。</p></details></section>
+        <section class="account-panel"><div class="account-heading"><div><p class="eyebrow">一个账户 · 一条净值曲线</p><h2>总账户表现</h2></div><p class="muted">起始 2026-09-04<br>可复盘</p></div><aside class="initial-conditions" aria-label="固定初始条件"><strong>固定初始条件</strong><span>总资金 <b>110,000 元</b></span><span>场内基金（ETF） <b>100,000 元</b></span><span>期货 <b>10,000 元</b></span><small>模型初始分配，后续盈亏不改变此条目；内部额度分别管理。</small></aside><div class="grid account-metrics"><div class="card"><div class="muted">累计收益</div><div class="metric">+3.27%</div></div><div class="card"><div class="muted">本期收益</div><div class="metric">+3.27%</div></div><div class="card"><div class="muted">资金指数</div><div class="metric">103.2673</div></div><div class="card"><div class="muted">周度观测最大回撤</div><div class="metric">0.0%</div></div></div><div class="chart-shell chart-desktop"><p class="chart-title">总账户资金曲线</p><p class="chart-subtitle">起始指数100 · 场内基金与期货权益合计 · 包含持仓浮盈亏 · 按周观测</p><svg class="equity-chart" viewBox="0 0 920 260" role="img" aria-label="总账户资金曲线"><line x1="70" y1="220.00" x2="870" y2="220.00" stroke="#e6ece7" /><line x1="70" y1="125.00" x2="870" y2="125.00" stroke="#e6ece7" /><line x1="70" y1="30.00" x2="870" y2="30.00" stroke="#e6ece7" /><path d="M 70.00 198.08 L 870.00 51.92" fill="none" stroke="#146c5f" stroke-width="3" /><circle cx="70.00" cy="198.08" r="4" fill="#146c5f"><title>2026-09-04：100.0000</title></circle><circle cx="870.00" cy="51.92" r="4" fill="#146c5f"><title>2026-09-11：103.2673</title></circle><text x="870.00" y="39.92" text-anchor="end" font-weight="700">103.2673</text><text x="5" y="34">103.76</text><text x="5" y="224">99.51</text><text x="70" y="250">2026-09-04</text><text x="870" y="250" text-anchor="end">2026-09-11</text></svg><details class="chart-data"><summary>查看各期数值</summary><section><h2>曲线观测值</h2><div class="table-wrap"><table class="responsive-table"><thead><tr><th scope="col">日期</th><th scope="col">指数</th><th scope="col">状态</th></tr></thead><tbody><tr><td data-label="日期">2026-09-04</td><td data-label="指数">100.00</td><td data-label="状态">可复盘</td></tr><tr><td data-label="日期">2026-09-11</td><td data-label="指数">103.27</td><td data-label="状态">可复盘</td></tr></tbody></table></div></section></details></div><div class="chart-shell chart-mobile"><p class="chart-title">总账户资金曲线</p><p class="chart-subtitle">起始指数100 · 场内基金与期货权益合计 · 包含持仓浮盈亏 · 按周观测</p><svg class="equity-chart" viewBox="0 0 420 260" role="img" aria-label="总账户资金曲线"><line x1="70" y1="220.00" x2="370" y2="220.00" stroke="#e6ece7" /><line x1="70" y1="125.00" x2="370" y2="125.00" stroke="#e6ece7" /><line x1="70" y1="30.00" x2="370" y2="30.00" stroke="#e6ece7" /><path d="M 70.00 198.08 L 370.00 51.92" fill="none" stroke="#146c5f" stroke-width="3" /><circle cx="70.00" cy="198.08" r="4" fill="#146c5f"><title>2026-09-04：100.0000</title></circle><circle cx="370.00" cy="51.92" r="4" fill="#146c5f"><title>2026-09-11：103.2673</title></circle><text x="370.00" y="39.92" text-anchor="end" font-weight="700">103.2673</text><text x="5" y="34">103.76</text><text x="5" y="224">99.51</text><text x="70" y="250">2026-09-04</text><text x="370" y="250" text-anchor="end">2026-09-11</text></svg><details class="chart-data"><summary>查看各期数值</summary><section><h2>曲线观测值</h2><div class="table-wrap"><table class="responsive-table"><thead><tr><th scope="col">日期</th><th scope="col">指数</th><th scope="col">状态</th></tr></thead><tbody><tr><td data-label="日期">2026-09-04</td><td data-label="指数">100.00</td><td data-label="状态">可复盘</td></tr><tr><td data-label="日期">2026-09-11</td><td data-label="指数">103.27</td><td data-label="状态">可复盘</td></tr></tbody></table></div></section></details></div><section><h2>收益从哪里来</h2><div class="table-wrap"><table class="responsive-table"><thead><tr><th scope="col">来源</th><th scope="col">贡献（指数点）</th><th scope="col">计算内容</th></tr></thead><tbody><tr><td data-label="来源">场内基金净贡献</td><td data-label="贡献（指数点）">+0.0000</td><td data-label="计算内容">现金收益、持仓涨跌和已计模拟费用合计</td></tr><tr><td data-label="来源">期货净贡献</td><td data-label="贡献（指数点）">+3.2673</td><td data-label="计算内容">已实现盈亏＋未平仓浮盈亏－手续费</td></tr><tr><td data-label="来源">总账户</td><td data-label="贡献（指数点）">+3.2673</td><td data-label="计算内容">两类资产贡献相加；相对于总账户起始资金</td></tr></tbody></table></div></section><details><summary>查看收益拆解与计算口径</summary><p>期货贡献拆解：已实现 +0.0000 点，未实现 +3.2727 点，手续费 -0.0055 点。收益包含浮盈，不等于已落袋盈利。各项独立四舍五入，合计使用未舍入值。</p><p>总权益＝场内基金现金及资产＋期货权益。总收益按总账户资金计算，不是两个收益率的简单平均。保证金是占用资金，不再额外加到权益中。内部风险额度维持原设置。</p><p>本次统一展示以原模型总预算为起始资金。场内基金正式建账前的预留额度按未投入现金、零收益处理；已经核验该区间没有场内基金模拟成交。此为展示口径修订，没有补造历史交易。</p><p>没有外部资金流；缺少任一侧同日估值时保留断点，不补成零收益。仅有一期观测时不计算本期收益和最大回撤。</p></details></section>
+        <section id="overview" class="overview"><p class="eyebrow">本周结论</p><h2>场内基金暂无新增调整信号，期货有 1 项重点建议。</h2><p class="muted">以本期公开记录为准；等待、数据不足和已成交分别呈现。</p><div class="grid overview-grid"><div class="card"><div class="muted">场内基金调整</div><div class="metric">0 项</div></div><div class="card"><div class="muted">期货重点建议</div><div class="metric">1 项</div></div><div class="card"><div class="muted">等待观察</div><div class="metric">14 项</div></div><div class="card health"><div class="muted">数据状态</div><strong>原运行有费率缺口</strong><p>9月11日原运行有114项年费率缺失。9月13日起统一按0%假设，后续不再因缺费率阻断；本期建议保留原记录。</p></div></div></section>
         <section>
           <h2>历史报告</h2>
           <table class="responsive-table">
