@@ -7,8 +7,8 @@
       "url": "reports/2026-09-18/",
       "model_version": "capm_frontier_v2",
       "data_status": {
-        "label": "仅披露动作层检查",
-        "detail": "场内基金共 117 项，数据阻断 0 项；动作层通过不代表研究与权益数据完整。"
+        "label": "近期基本面证据已补齐",
+        "detail": "15个期货品种全部通过近期证据检查；ETF动作层数据阻断0项。"
       },
       "action_counts": {
         "等待": 8
@@ -91,7 +91,7 @@
         {
           "asset_name": "精对苯二甲酸期货",
           "contract": "TA2701.ZCE",
-          "action": "数据阻断",
+          "action": "持有多头",
           "direction": "多头",
           "target_lots": 2,
           "delta_lots": 0,
@@ -101,12 +101,12 @@
           "planned_max_loss": 2000.0,
           "confidence": "中",
           "invalidation": "综合信号分数低于60时退出多头",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "聚氯乙烯期货",
           "contract": "V2701.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -116,12 +116,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "棉花",
           "contract": "CF2701.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -131,12 +131,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "棕榈油",
           "contract": "P2701.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -146,12 +146,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "热轧卷板",
           "contract": "HC2701.SHF",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -161,12 +161,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "玉米",
           "contract": "C2611.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -176,12 +176,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "玻璃",
           "contract": "FG2701.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -191,12 +191,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "甲醇",
           "contract": "MA2610.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -206,12 +206,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "白糖",
           "contract": "SR2701.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -221,12 +221,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "纯碱",
           "contract": "SA2701.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -236,12 +236,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "聚丙烯",
           "contract": "PP2701.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -251,12 +251,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "菜籽粕",
           "contract": "RM2611.ZCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -266,12 +266,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "螺纹钢",
           "contract": "RB2701.SHF",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -281,12 +281,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "豆粕",
           "contract": "M2701.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -296,12 +296,12 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         },
         {
           "asset_name": "铁矿石",
           "contract": "I2701.DCE",
-          "action": "数据阻断",
+          "action": "等待",
           "direction": "空仓",
           "target_lots": 0,
           "delta_lots": 0,
@@ -311,7 +311,7 @@
           "planned_max_loss": 0.0,
           "confidence": "中",
           "invalidation": "信号未达到开仓阈值，保持空仓",
-          "review_status": "数据阻断，不评价收益"
+          "review_status": "模型跟踪，无需人工确认"
         }
       ],
       "futures_advice_count": 15,
@@ -325,10 +325,10 @@
           "observation_end": "2026-09-18",
           "recorded_as_of": "2026-09-18",
           "revision": 1,
-          "period_return": -0.0019200000000000328,
+          "period_return": -0.001920000000000033,
           "max_adverse_return": -0.007040000000000046,
           "max_favorable_return": 0.06752000000000002,
-          "stop_triggered": "否",
+          "stop_triggered": "0.0",
           "review_status": "方向不利",
           "summary": "持有多头，复盘状态：方向不利，期间方向表现-0.2%"
         },
@@ -572,7 +572,7 @@
         "status": "可复盘",
         "ending_index": 134.74,
         "total_return": 0.34740000000000015,
-        "max_drawdown": 0.19094511828990035,
+        "max_drawdown": 0.1909451182899004,
         "closed_count": 0,
         "win_rate": null,
         "curve": [
@@ -770,7 +770,12 @@
         "win_rate": 1.0,
         "method": "历史信号贡献指数从100起步；按模型仓位乘以已结束周期方向收益累计；不是账户净值，不计手续费、滑点、税费、融资与保证金影响"
       },
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "presentation_revision": {
+        "date": "2026-09-18",
+        "title": "补齐基本面证据，重算本周建议",
+        "summary": "本期基本面数据修订：修复最新证据更新被历史补采超时丢弃的问题，库存及基差已补齐至9月18日。15个品种均通过近期证据检查，建议重算为14个观望、PTA持有2手多头。历史建议、已发生模拟成交及账户权益保持原记录。"
+      }
     },
     {
       "date": "2026-09-11",
