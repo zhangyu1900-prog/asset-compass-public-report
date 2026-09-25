@@ -1,0 +1,17 @@
+{
+  "report_date": "2026-09-25",
+  "summary": "新增PTA同月份盘面加工价差参考，已核验一年历史；该指标不参与模型评分，产业利润仍未接入。原有模型建议、成交记录及总账户资金曲线保持原记录。",
+  "scope": "independent_research_reference",
+  "model_decisions_recomputed": false,
+  "ledger_trades_changed": false,
+  "original_sha256": {
+    "index.html": "4311be44cd1a33b45b00f50dfa95bfe50efa7d87d058f16c687e5957ec48f395",
+    "data/public_reports.json": "2f4cae5220cb4ad770ccbb31f11028add6d6a63f6216bcceb7678da1bb4b5545",
+    "reports/2026-09-25/index.html": "33788413f662882429cbb827b2bcaf690b08cb4939b8cebf3a2fbbebd2ba7418"
+  },
+  "revised_sha256": {
+    "index.html": "bdd7c4f9324f635bdbfcc36a5d2073ba288cfd4cd5635a9c8a0a92a2e473b84f",
+    "data/public_reports.json": "2301a955f8151462b121a933db6d5cff84bac9dbd1ea73603c8f520ef4972bd5",
+    "reports/2026-09-25/index.html": "923c9911a47b5f1dc912444beec5b38b04d29aefc095fef0075488fb1aa26da1"
+  }
+}

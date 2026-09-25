@@ -790,7 +790,29 @@
         "win_rate": 1.0,
         "method": "历史信号贡献指数从100起步；按模型仓位乘以已结束周期方向收益累计；不是账户净值，不计手续费、滑点、税费、融资与保证金影响"
       },
-      "backtest_comparison": []
+      "backtest_comparison": [],
+      "processing_spread_reference": {
+        "status": "ok",
+        "profit_status": "未接入经核验的产业利润数据",
+        "score_eligible": false,
+        "observations": 243,
+        "gaps": 0,
+        "method": "pta_px_same_month_close_v1",
+        "date": "2026-09-24",
+        "start_date": "2025-09-24",
+        "ta_contract": "TA2701.ZCE",
+        "px_contract": "PX2701.ZCE",
+        "ta_close": 6340.0,
+        "px_close": 8944.0,
+        "value": 481.68,
+        "weekly_observations": 52,
+        "roll_count": 3
+      },
+      "presentation_revision": {
+        "date": "2026-09-25",
+        "title": "补充PTA加工价差参考",
+        "summary": "新增PTA同月份盘面加工价差参考，已核验一年历史；该指标不参与模型评分，产业利润仍未接入。原有模型建议、成交记录及总账户资金曲线保持原记录。"
+      }
     },
     {
       "date": "2026-09-18",
