@@ -1,0 +1,17 @@
+{
+  "report_date": "2026-09-18",
+  "scope": "current_week_fundamental_evidence_and_advice",
+  "summary": "本期基本面数据修订：修复最新证据更新被历史补采超时丢弃的问题，库存及基差已补齐至9月18日。15个品种均通过近期证据检查，建议重算为14个观望、PTA持有2手多头。历史建议、已发生模拟成交及账户权益保持原记录。",
+  "model_decisions_recomputed": true,
+  "historical_trades_changed": false,
+  "original_sha256": {
+    "index.html": "902da35874683c8bcc435a02233e21a5ba5de261c0be88f43d51401e57c47970",
+    "data/public_reports.json": "7c8b18135adaf6fb6959fe963627a422b19032ef2ea86e661fea00014b95d724",
+    "reports/2026-09-18/index.html": "0e757f201c03decc92bed00e6f6a4dba1f64d89081b8959bfe8b220ec47595d4"
+  },
+  "revised_sha256": {
+    "index.html": "51fbf37e4535fd2712a01c6630665e6583bb2b437b18868b07a305587fab005c",
+    "data/public_reports.json": "b4852a5efd71add5e08d8b47b996d49766de566de99ffe25f863b72267307a96",
+    "reports/2026-09-18/index.html": "e35b13ee53859a56d085abdd995e1b7050134c244f4a3677e89f975e4dae2db4"
+  }
+}
